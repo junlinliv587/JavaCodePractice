@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class IfExer1 {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Type your height:(cm)");
+		int height = scan.nextInt();
+		System.out.println("Type your wealth:(million)");
+		double wealth = scan.nextDouble();
+
+		/*
+		Answer 1:
+		System.out.println("Are you handsome：(true/false)");
+		boolean isHandsome = scan.nextBoolean();
+
+		if(height >= 180 && wealth >= 1 && isHandsome){
+			System.out.println("You are successful!");
+		}else if(height >= 180 || wealth >= 1 || isHandsome){
+			System.out.println("You are good");
+		}else{
+			System.out.println("You need to work hard");
+		}
+		*/
+
+		//Answer 2：
+		System.out.println("Are you handsome：(true/false)");
+		String isHandsome = scan.next();
+
+		
+		if(height >= 180 && wealth >= 1 && isHandsome.equals("Yes")){
+			System.out.println("You are successful!");
+		}else if(height >= 180 || wealth >= 1 || isHandsome.equals("Yes")){
+			System.out.println("You are good");
+		}else{
+			System.out.println("You need to work hard");
+		}
+	}
+}
