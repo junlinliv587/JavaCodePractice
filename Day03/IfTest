@@ -1,0 +1,35 @@
+class IfTest {
+	public static void main(String[] args) {
+		
+		//Example1
+		int heartBeats = 79;
+		if(heartBeats < 60 || heartBeats > 100){
+			System.out.println("You need to do further checks");
+		}
+
+		System.out.println("The checks are over");
+		
+		//Example2
+		int age = 23;
+		if(age < 18){
+			System.out.println("You need to do homework");
+		}else{
+			System.out.println("You can watch movies");
+		}
+
+		//Example3
+		if(age < 0){
+			System.out.println("The data is illegal");
+		}else if(age < 18){
+			System.out.println("Youth");
+		}else if(age < 35){
+			System.out.println("Prime-age");
+		}else if(age < 60){
+			System.out.println("Middle-age");
+		}else if(age < 120){
+			System.out.println("Old-age");
+		}else{
+			System.out.println("Amazing!");
+		}
+	}
+}
