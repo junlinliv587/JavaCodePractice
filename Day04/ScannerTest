@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class ScannerTest{
+	
+	public static void main(String[] args){
+		
+		Scanner scan = new Scanner(System.in);
+		
+	
+		System.out.println("Type your name:");
+		String name = scan.next();
+		System.out.println(name);
+
+		System.out.println("type your age:");
+		int age = scan.nextInt();
+		System.out.println(age);
+
+		System.out.println("Type your weight:");
+		double weight = scan.nextDouble();
+		System.out.println(weight);
+
+		System.out.println("Are you a adult?(true/false)");
+		boolean isAdult = scan.nextBoolean();
+		System.out.println(isAdult);
+
+	}
+
+}
